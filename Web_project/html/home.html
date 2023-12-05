@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL CSS  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <!-- JQUERY UI  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.min.css"
+        integrity="sha512-b2Vnu4ARgWtz47cxvNMnJtelWzsIHnwLf8YlVWa5+kSPbUnWzr+jg6xHcG2ah0amx2nZ94C9cwz/+R06fFzl6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div class="sidebar-open" id="open-btn">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="over-lay" id="overs-lay">
+    </div>
+    <div class="offcanvas-menu-wrapper show-offcanvas-menu-wrapper" id="sidebar-menu">
+        <div class="canvas-close" id="close-btn">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="header-configure-area">
+            <a href="#" class="bk-btn">Đặt phòng ngay</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="../html/home.html">Trang chủ</a></li>
+                <li><a href="../html/room.html">Phòng</a></li>
+                <li><a href="#">Về chúng tôi</li>
+            </ul>
+        </nav>
+        <div class="top-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></i></a>
+            <a href="#"><i class="fab fa-app-store"></i></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> (12) 345 67890</li>
+            <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+        </ul>
+    </div>
+    </div>
+    <header class="header__section">
+        <div class="top__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <ul class="tn-left">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                (12) 345 67890
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                infor.colorlib@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <div class="tn-right">
+                            <div class="social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-app-store"></i></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="bk-btn">Đặt phòng ngay</a>
+                            <a href="#" class="bk-btn">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="home.html">
+                                <img src="../img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 left">
+                        <div class="menu">
+                            <div class="menu_left">
+                                <ul>
+                                    <li class="active"><a href="#">Trang chủ</a></li>
+                                    <li><a href="room.html">Phòng</a></li>
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                    <li><a href="#">Bài viết</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro_text">
+                        <h1>Khách sạn Sona A Luxury</h1>
+                        <p>Dưới đây là các trang web đặt phòng khách sạn tốt nhất, bao gồm các đề xuất về du lịch quốc
+                            tế và tìm phòng khách sạn giá rẻ.</p>
+                        <button>KHÁM PHÁ NGAY BÂY GIỜ</button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                    <div class="booking_form">
+                        <h2>
+                            Đặt phòng khách sạn
+                        </h2>
+                        <form action="#">
+                            <div class="check-date">
+                                <p>Ngày vào:</p>
+                                <div class="check" style="display: flex;">
+                                    <input type="text" class="date-input " id="hasDatepicker1">
+                                    <div class="icon"><i class="fa fa-calendar-week"></i></div>
+                                </div>
+                            </div>
+                            <div class="check-date">
+                                <p>Ngày ra:</p>
+                                <div class="check" style="display: flex;">
+                                    <input type="text" class="date-input " id="hasDatepicker2">
+                                    <div class="icon"><i class="fa fa-calendar-week"></i></div>
+                                </div>
+                                <span class="noti-text" id="validation-notes">* Ngày check-out phải sau ngày
+                                    check-in.Vui lòng chọn lại</span>
+                            </div>
+                            <div class="select-option">
+                                <p>Người lớn:</p>
+                                <div class="select-item">
+                                    <button id="adult-mn" style="border: 0;"><i class="fa fa-minus"></i></button>
+                                    <span id="adult-count">0</span>
+                                    <button id="adult-pl" style="border: 0;"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="select-option">
+                                <p>Trẻ em: </p>
+                                <div class="select-item">
+                                    <button id="kid-mn" style="border: 0;"><i class="fa fa-minus"></i></button>
+                                    <span id="kid-count">0</span>
+                                    <button id="kid-pl" style="border: 0;"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p>Chọn giá:</p>
+                                <div class="range-slider" style="text-align: center;">
+                                    <span class="price__input">
+                                        Từ:
+                                        <input class="input-min" type="number" value="25000" min="0" max="120000"> -
+                                        Đến:
+                                        <input class="input-max" type="number" value="50000" min="0" max="120000">
+                                    </span>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input class="range-min" value="1000" min="0" max="120000" step="500"
+                                            type="range">
+                                        <input class="range-max" value="50000" min="0" max="120000" step="500"
+                                            type="range">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button class="check-available" id="checkdate-btn">Check Availability</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about__us ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_text">
+                        <div class="title">
+                            <span>Về chúng tôi</span>
+                            <h2>
+                                Intercontinental LA
+                                <br>
+                                Minh Minh Hotel
+                            </h2>
+                        </div>
+                        <p class="para1">Chúng tôi đam mê du lịch. Mỗi ngày, chúng tôi truyền cảm hứng và tiếp cận hàng
+                            triệu khách du lịch trên 90 trang web địa phương bằng 41 ngôn ngữ.</p>
+                        <p class="para2">
+                            Vì vậy, khi cần đặt phòng khách sạn, nhà nghỉ cho thuê, khu nghỉ dưỡng, căn hộ, nhà khách
+                            hoặc nhà trên cây hoàn hảo, chúng tôi sẽ hỗ trợ bạn.
+                        </p>
+                        <button class="about_btn">Đọc thêm</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="picture">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="../img/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="../img/about-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="service_header">
+                        <span>Chúng tôi làm gì?</span>
+                        <h2>Khám phá dịch vụ của chúng tôi</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fa fa-parking"></i>
+                        <h4>Travel Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fab fa-ravelry"></i>
+                        <h4>Travel Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fa fa-bed"></i>
+                        <h4>Travel Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fa fa-parking"></i>
+                        <h4>Travel Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fa fa-clock"></i>
+                        <h4>Travel Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service_item">
+                        <i class="fa fa-cocktail"></i>
+                        <h4>Bar & Drink</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="room_options">
+
+        <div class="container-fluid">
+            <div class="room">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="room_item set-bg1">
+                            <div class="room-text">
+                                <h3>Double Room</h3>
+                                <h2>159$<span>/Một đêm</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Kích thước:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Sức chứa:</td>
+                                            <td>Tối đa 5 người</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Giường:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Dịch vụ:</td>
+                                            <td>Wifi, Tivi, Phòng tắm,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">Chi tiết hơn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="room_item set-bg2">
+                            <div class="room-text">
+                                <h3>Premium King Room</h3>
+                                <h2>159$<span>/Một đêm</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Kịch thước:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Sức chứa:</td>
+                                            <td>Tối đa 5 người</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Giường:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Dịch vụ:</td>
+                                            <td>Wifi, Tivi, Phòng tắm,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">Chi tiết hơn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="room_item set-bg3">
+                            <div class="room-text">
+                                <h3>Deluxe Room</h3>
+                                <h2>159$<span>/Một đêm</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Kích thước:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Sức chứa:</td>
+                                            <td>Tối đa 5 người</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Giường:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Dịch vụ:</td>
+                                            <td>Wifi, Tivi, Phòng tắm,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">Chi tiết hơn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="room_item set-bg4">
+                            <div class="room-text">
+                                <h3>Family Room</h3>
+                                <h2>159$<span>/Một đêm</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Kích thước:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Sức chứa:</td>
+                                            <td>Tối đa 5 người</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Giường:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Dịch vụ:</td>
+                                            <td>Wifi, Tivi, Phòng tắm,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">Chi tiết hơn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog_event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 blog-header" style="text-align: center;">
+                    <p>Tin tức</p>
+                    <h3>Sự kiện và bài viết</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-item" style="background-image: url(../img/blog-1.jpg);">
+                        <div class="bi-text">
+                            <span class="b-tag">Chuyến đi du lịch</span>
+                            <h4><a href="#">Run rẩy ở Canada</a></h4>
+                            <div class="b-time"><i class="fa fa-clock"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item" style="background-image: url(../img/blog-2.jpg);">
+                        <div class="bi-text">
+                            <span class="b-tag">Chuyến đi du lịch</span>
+                            <h4><a href="#">Chọn một đoàn lữ hành tĩnh</a></h4>
+                            <div class="b-time"><i class="fa fa-clock"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item" style="background-image: url(../img/blog-3.jpg);">
+                        <div class="bi-text">
+                            <span class="b-tag">Chuyến đi du lịch</span>
+                            <h4><a href="#">Hẻm núi đồng</a></h4>
+                            <div class="b-time"><i class="fa fa-clock"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-item" style="background-image: url(../img/blog-wide.jpg);">
+                        <div class="bi-text">
+                            <span class="b-tag">Chuyến đi du lịch</span>
+                            <h4><a href="#">Chuyến đi đến Iqaluit ở Nunavut Một thành phố ở Bắc Cực của Canada</a></h4>
+                            <div class="b-time"><i class="fa fa-clock"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item" style="background-image: url(../img/blog-10.jpg);">
+                        <div class="bi-text">
+                            <span class="b-tag">Chuyến đi du lịch</span>
+                            <h4><a href="#">Du lịch tới Barcelona</a></h4>
+                            <div class="b-time"><i class="fa fa-clock"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="top_footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about">
+                            <div class="logo"><img src="../img/footer-logo.png" alt=""></div>
+                            <p>Chúng tôi truyền cảm hứng và tiếp cận hàng triệu khách du lịch trên 90 trang web địa phương</p>
+                            <div class="socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-app-store"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="contact_us">
+                            <h6>Liên hệ chúng tôi</h6>
+                            <p>(12) 345 67890</p>
+                            <p>info.colorlib@gmail.com</p>
+                            <p>279 Đ. Nguyễn Tri Phương, Phường 5, Quận 10, Thành phố Hồ Chí Minh, Việt Nam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="news">
+                            <h6>Mới nhất</h6>
+                            <p>Nhận các bản cập nhật và ưu đãi mới nhất.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-paper-plane"></i></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bot">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                            <li><a href="#">Bảo mật</a></li>
+                            <li><a href="#">Chính sách môi trường</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="bot_text">
+                            <p>
+                                Copyright ©2023 All rights reserved </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQUERY UI  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+
+            $("#hasDatepicker1").datepicker();
+            $("#hasDatepicker1").datepicker("option", "dateFormat", "d M, y");
+            $("#hasDatepicker1").datepicker("show");
+            $("#hasDatepicker2").datepicker();
+            $("#hasDatepicker2").datepicker("option", "dateFormat", "d M, y");
+            $("#hasDatepicker2").datepicker("show");
+
+        })
+    </script>
+    <script src="../js/home.js"></script>
+    <script src="../js/room.js"></script>
+</body>
+
+</html>
