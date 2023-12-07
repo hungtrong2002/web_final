@@ -1,14 +1,16 @@
 var inforBtn = document.querySelectorAll('.fa-info');
-var inforPart = document.getElementById('infor-part');
-var closeBtn = document.getElementById('close-btn');
-
-inforBtn.forEach(function (row) {
-    row.addEventListener('click', function (event) {
-        event.preventDefault();
-        inforPart.classList.add('show');
+var inforPart = document.querySelectorAll('.infor-part');
+var closeBtn = document.querySelectorAll('.close-btn');
+console.log(inforBtn,inforPart,closeBtn);
+inforBtn.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        inforPart[index].classList.add('show');
+        console.log(index);
     });
 });
-closeBtn.addEventListener('click', function (event) {
-    event.preventDefault();
-    inforPart.classList.remove('show');
+closeBtn.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        inforPart[index].classList.remove('show');
+        console.log(index);
+    });
 });

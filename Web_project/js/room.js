@@ -33,6 +33,5 @@ function compareDate1() {
     }
 }
 searchbtn.addEventListener('click', function (event) {
-    event.preventDefault();
     compareDate1();
 })

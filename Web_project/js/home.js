@@ -10,19 +10,21 @@ var openBtn=document.getElementById('open-btn');
 var sidebarMenu=document.getElementById('sidebar-menu');
 var closeBtn=document.getElementById('close-btn');
 var oversLay=document.getElementById('overs-lay');
-openBtn.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
+openBtn.addEventListener('click', function () {
     sidebarMenu.style.left='0';
     sidebarMenu.style.opacity='1';
     sidebarMenu.style.visibility='visible';
     oversLay.style.visibility='visible';
 });
-closeBtn.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
+closeBtn.addEventListener('click', function () {
+
     sidebarMenu.style.left='-300px';
     sidebarMenu.style.opacity='0';
     sidebarMenu.style.visibility='hidden';
     oversLay.style.visibility='hidden';
+});
+checkDatebtn.addEventListener('click', function () {
+    compareDate();
 });
 function compareDate() {
     var dateInput1 = new Date(document.getElementById('hasDatepicker1').value);
@@ -33,21 +35,17 @@ function compareDate() {
         notiValidate.style.display='none';
     }
 }
-kidMnButton.addEventListener('click', function(event) {
-    event.preventDefault();
+kidMnButton.addEventListener('click', function() {
     decrement('kid-count');
 });
 
-kidPlButton.addEventListener('click', function(event) {
-    event.preventDefault();
+kidPlButton.addEventListener('click', function() {
     increment('kid-count');
 });
-adultMnButton.addEventListener('click', function(event) {
-    event.preventDefault();
+adultMnButton.addEventListener('click', function() {
     decrement('adult-count');
 });
-adultPlButton.addEventListener('click', function(event) {
-    event.preventDefault();
+adultPlButton.addEventListener('click', function() {
     increment('adult-count');
 });
 
