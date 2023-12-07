@@ -106,11 +106,11 @@
                         <div class="menu">
                             <div class="menu_left">
                                 <ul>
-                                    <li class="active"><a href="#">Trang chủ</a></li>
-                                    <li><a href="room.html">Phòng</a></li>
+                                    <li class="active"><a href="./home.html">Trang chủ</a></li>
+                                    <li><a href="./room.html">Phòng</a></li>
                                     <li><a href="#">Về chúng tôi</a></li>
                                     <li><a href="#">Bài viết</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="./contact.html">Liên hệ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -156,7 +156,10 @@
                                 <p>Người lớn:</p>
                                 <div class="select-item">
                                     <button id="adult-mn" style="border: 0;"><i class="fa fa-minus"></i></button>
-                                    <span id="adult-count">0</span>
+                                    <input id="adult-count" value="0" readonly style="border: none;
+                                    text-align: center;
+                                    height: 40px;
+                                    width: 60%;"></input>
                                     <button id="adult-pl" style="border: 0;"><i class="fa fa-plus"></i></button>
                                 </div>
                             </div>
@@ -164,7 +167,10 @@
                                 <p>Trẻ em: </p>
                                 <div class="select-item">
                                     <button id="kid-mn" style="border: 0;"><i class="fa fa-minus"></i></button>
-                                    <span id="kid-count">0</span>
+                                    <input id="kid-count" value="0" readonly style="border: none;
+                                    text-align: center;
+                                    height: 40px;
+                                    width: 60%;"></input>
                                     <button id="kid-pl" style="border: 0;"><i class="fa fa-plus"></i></button>
                                 </div>
                             </div>
@@ -489,7 +495,8 @@
                     <div class="col-lg-4">
                         <div class="about">
                             <div class="logo"><img src="../img/footer-logo.png" alt=""></div>
-                            <p>Chúng tôi truyền cảm hứng và tiếp cận hàng triệu khách du lịch trên 90 trang web địa phương</p>
+                            <p>Chúng tôi truyền cảm hứng và tiếp cận hàng triệu khách du lịch trên 90 trang web địa
+                                phương</p>
                             <div class="socials">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>

@@ -33,56 +33,36 @@ function compareDate() {
         notiValidate.style.display='none';
     }
 }
-
-// Định nghĩa hàm giảm giá trị
-function decreaseCount() {
-    var currentCount = parseInt(adultCountSpan.innerHTML);
-    if (currentCount > 0) {
-        adultCountSpan.innerHTML = currentCount - 1;
-    }
-}
-
-// Định nghĩa hàm tăng giá trị
-function increaseCount() {
-    var currentCount = parseInt(adultCountSpan.innerHTML);
-    adultCountSpan.innerHTML = currentCount + 1;
-}
-// Định nghĩa hàm giảm giá trị cho "kid"
-function decreaseKidCount() {
-    var currentCount = parseInt(kidCountSpan.innerHTML);
-    if (currentCount > 0) {
-        kidCountSpan.innerHTML = currentCount - 1;
-    }
-}
-
-// Định nghĩa hàm tăng giá trị cho "kid"
-function increaseKidCount() {
-    var currentCount = parseInt(kidCountSpan.innerHTML);
-    kidCountSpan.innerHTML = currentCount + 1;
-}
-
-// Gán sự kiện click cho nút giảm và tăng
-adultMnButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
-    decreaseCount();
-});
-
-adultPlButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
-    increaseCount();
-});
-
-// Gán sự kiện click cho nút giảm và tăng cho "kid"
-kidMnButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
-    decreaseKidCount();
-});
-
-kidPlButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Ngăn chặn hành động mặc định của sự kiện click
-    increaseKidCount();
-})
-checkDatebtn.addEventListener('click', function (event) {
+kidMnButton.addEventListener('click', function(event) {
     event.preventDefault();
-    compareDate();
-})
+    decrement('kid-count');
+});
+
+kidPlButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    increment('kid-count');
+});
+adultMnButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    decrement('adult-count');
+});
+adultPlButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    increment('adult-count');
+});
+
+function decrement(text) {
+    var inputElement = document.getElementById(text);
+    var currentValue = parseInt(inputElement.value, 10);
+
+    if (currentValue > 0) {
+        inputElement.value = currentValue - 1;
+    }
+}
+
+function increment(text) {
+    var inputElement = document.getElementById(text);
+    var currentValue = parseInt(inputElement.value, 10);
+
+    inputElement.value = currentValue + 1;
+}
