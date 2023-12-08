@@ -141,14 +141,14 @@
                             <div class="check-date">
                                 <p>Ngày vào:</p>
                                 <div class="check" style="display: flex;">
-                                    <input type="text" class="date-input " id="hasDatepicker1">
+                                    <input type="text" class="date-input " id="hasDatepicker1" autocomplete="off" >
                                     <div class="icon"><i class="fa fa-calendar-week"></i></div>
                                 </div>
                             </div>
                             <div class="check-date">
                                 <p>Ngày ra:</p>
                                 <div class="check" style="display: flex;">
-                                    <input type="text" class="date-input " id="hasDatepicker2">
+                                    <input type="text" class="date-input " id="hasDatepicker2" autocomplete="off">
                                     <div class="icon"><i class="fa fa-calendar-week"></i></div>
                                 </div>
                                 <span class="noti-text" id="validation-notes">* Ngày check-out phải sau ngày
@@ -197,7 +197,7 @@
 
                                 </div>
                             </div>
-                            <button class="check-available" id="checkdate-btn">Check Availability</button>
+                            <button class="check-available" id="checkdate-btn" type="button">Check Availability</button>
                         </form>
                     </div>
 
@@ -565,12 +565,13 @@
 
             $("#hasDatepicker1").datepicker();
             $("#hasDatepicker1").datepicker("option", "dateFormat", "d M, y");
-            $("#hasDatepicker1").datepicker("show");
+            // $("#hasDatepicker1").datepicker("show");
             $("#hasDatepicker2").datepicker();
             $("#hasDatepicker2").datepicker("option", "dateFormat", "d M, y");
-            $("#hasDatepicker2").datepicker("show");
+            // $("#hasDatepicker2").datepicker("show");
+        
 
-        })
+        });
     </script>
     <script src="../js/home.js"></script>
     <script src="../js/room.js"></script>

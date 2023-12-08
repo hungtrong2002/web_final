@@ -23,18 +23,18 @@ closeBtn.addEventListener('click', function () {
     sidebarMenu.style.visibility='hidden';
     oversLay.style.visibility='hidden';
 });
-checkDatebtn.addEventListener('click', function () {
-    compareDate();
-});
-function compareDate() {
-    var dateInput1 = new Date(document.getElementById('hasDatepicker1').value);
-    var dateInput2 = new Date(document.getElementById('hasDatepicker2').value);
-    if(dateInput1>dateInput2){
-        notiValidate.style.display='block';
-    }else{
-        notiValidate.style.display='none';
-    }
-}
+// checkDatebtn.addEventListener('click', function () {
+//     compareDate();
+// });
+// function compareDate() {
+//     var dateInput1 = new Date(document.getElementById('hasDatepicker1').value);
+//     var dateInput2 = new Date(document.getElementById('hasDatepicker2').value);
+//     if(dateInput1>dateInput2){
+//         notiValidate.style.display='block';
+//     }else{
+//         notiValidate.style.display='none';
+//     }
+// }
 kidMnButton.addEventListener('click', function() {
     decrement('kid-count');
 });
@@ -61,6 +61,5 @@ function decrement(text) {
 function increment(text) {
     var inputElement = document.getElementById(text);
     var currentValue = parseInt(inputElement.value, 10);
-
     inputElement.value = currentValue + 1;
 }

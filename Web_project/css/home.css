@@ -1027,3 +1027,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #DFA974;
     border: 1px solid #dfa974;
 }
+.personal_info table input:focus{
+    box-shadow: none;
+}
+.personal_info table input[type="file"]{
+    cursor: pointer;
+}
+.personal_info .save_btn{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 16px 28px 15px;
+    margin-top: 30px;
+    background: #dfa974;
+    color: #ffffff;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+}
